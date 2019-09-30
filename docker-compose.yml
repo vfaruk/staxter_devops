@@ -8,9 +8,6 @@ services:
       update_config:
         parallelism: 1
         delay: 15s
-      restart_policy:
-        max_attempts: 10
-        delay: 2s	  
     build:
       context: ./
       dockerfile: Dockerfile
