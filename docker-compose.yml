@@ -3,11 +3,6 @@ version: '3'
 services:
   staxter_service:
     image: staxter_image:1
-    deploy:
-      replicas: 2
-      update_config:
-        parallelism: 1
-        delay: 15s
     build:
       context: ./
       dockerfile: Dockerfile
