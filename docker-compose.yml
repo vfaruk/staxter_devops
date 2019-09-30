@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  staxter_service:
+    image: staxter_image:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/springboot-docker-compose-app
+    ports:
+      - "8081:80"
