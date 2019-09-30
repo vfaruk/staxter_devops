@@ -10,5 +10,3 @@ services:
       - /data/springboot-docker-compose-app
     ports:
       - "80:8081"
-    args:
-      - JAR_FILE=/target/gs-spring-boot-0.1.0.jar
